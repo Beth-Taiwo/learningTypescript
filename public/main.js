@@ -1,10 +1,15 @@
 "use strict";
 // Language: typescript
 // Path: main.ts
-var names = ["Beth", "Choongsaeng", "Sonia", "Sophie", "Stephen"];
-console.log(names);
-let circ = (diameter) => {
-    return diameter * Math.PI;
+const logDetails = (uid, item) => {
+    console.log(`${item} has a uid of ${uid}`);
 };
-console.log(circ(10));
-console.log("Holaa carino");
+const greet = (user) => {
+    console.log(`${user.firstName} says hello`);
+};
+const greetAgain = (user) => {
+    console.log(`${user.lastName} says hello`);
+};
+logDetails(123, "car");
+greet({ firstName: "Max", lastName: "Smith" });
+greetAgain({ firstName: "Jane", lastName: "Doe" });

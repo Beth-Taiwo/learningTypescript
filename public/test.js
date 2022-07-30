@@ -1,7 +1,7 @@
 "use strict";
 console.log("testing 1 2 3!!!");
-let greet;
-greet = () => {
+let greetFunction;
+greetFunction = () => {
     console.log("Hi there!");
 };
 const add = (a, b, c = "Well") => {

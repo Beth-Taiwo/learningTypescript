@@ -1,8 +1,8 @@
 console.log("testing 1 2 3!!!");
 
-let greet: Function;
+let greetFunction: Function;
 
-greet = () => {
+greetFunction = () => {
   console.log("Hi there!");
 };
 

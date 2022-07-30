@@ -1,12 +1,21 @@
 // Language: typescript
 // Path: main.ts
-var names = ["Beth", "Choongsaeng", "Sonia", "Sophie", "Stephen"];
-console.log(names);
 
-let circ = (diameter: number) => {
-  return diameter * Math.PI;
+type StringOrNum = string | number;
+type User = { firstName: string; lastName: string };
+
+const logDetails = (uid: StringOrNum, item: string) => {
+  console.log(`${item} has a uid of ${uid}`);
 };
 
-console.log(circ(10));
+const greet = (user: User) => {
+  console.log(`${user.firstName} says hello`);
+};
 
-console.log("Holaa carino");
+const greetAgain = (user: User) => {
+  console.log(`${user.lastName} says hello`);
+};
+
+logDetails(123, "car");
+greet({ firstName: "Max", lastName: "Smith" });
+greetAgain({ firstName: "Jane", lastName: "Doe" });
