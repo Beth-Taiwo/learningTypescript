@@ -31,3 +31,10 @@ printDetails = (ninja) => {
     console.log(`${ninja.name} is not up to ${ninja.age} years old`);
 };
 printDetails({ name: "Beth", age: 30 });
+const anchor = document.querySelector("a");
+console.log(anchor.href);
+// const form = document.querySelector("form")!;
+// console.log(form.children);
+// type casting
+const form1 = document.querySelector(".new-item-form");
+console.log(form1.children);

@@ -43,3 +43,15 @@ printDetails = (ninja: person) => {
 };
 
 printDetails({ name: "Beth", age: 30 });
+
+const anchor = document.querySelector("a")!;
+
+console.log(anchor.href);
+
+// const form = document.querySelector("form")!;
+// console.log(form.children);
+
+// type casting
+const form1 = document.querySelector(".new-item-form") as HTMLFormElement;
+
+console.log(form1.children);
